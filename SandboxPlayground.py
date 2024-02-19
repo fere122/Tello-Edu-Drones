@@ -53,28 +53,27 @@ print("\n****CHECK SURROUNDING AREA BEFORE FLIGHT****")
 ready = input('\nAre you ready to take flight: ')
 
 
-try:
-    if ready.lower() == 'yes':
+#if ready.lower() == 'yes':
+        #print("\nStarting Drone!\n")
+
+        #sendmsg('battery?', 6)
+        #sendmsg('command', 6)
+       # sendmsg('takeoff')
+    #for i in range(4):
+    #sendmsg('forward 80', 6)
+    #sendmsg('ccw 90', 6)
+        # Square - Pilot = Tate keck - co pilot Blake Krugger
+
+
+if ready.lower() == 'yes':
         print("\nStarting Drone!\n")
 
-        sendmsg('command', 0)
+        sendmsg('battery?', 6)
+        sendmsg('command', 6)
         sendmsg('takeoff')
-
-        # square - pilot = Tate Keck Copilot = Blake Krueger
-
-        # triangle pilot = Blake krueger - Copilot = Tate Keck
-
-        # Circle Pilot = Tate Keck - Copilot = Blake Krueger
+        sendmsg('')
 
 
-        sendmsg('land')
 
-        print('\nGreat Flight!!!')
-
-    else:
+else:
         print('\nMake sure you check WIFI, surroundings, co-pilot is ready, re-run program\n')
-except KeyboardInterrupt:
-    sendmsg('emergency')
-
-breakr = True
-sock.close()
