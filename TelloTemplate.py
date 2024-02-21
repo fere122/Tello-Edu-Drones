@@ -60,7 +60,11 @@ try:
         sendmsg('takeoff')
         sendmsg('battery?',7)
         sendmsg('up 50', 10)
-        sendmsg('forward 400')
+        sendmsg('forward 400',10)
+
+        sendmsg('curve 125 125 0 0 250 0 50',10)
+        sendmsg('cw 180',10 )
+        sendmsg('forward 40' ,10)
 
 
 
