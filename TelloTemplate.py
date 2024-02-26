@@ -60,11 +60,10 @@ try:
         sendmsg('command', 0)
         sendmsg('takeoff')
 
-        # square - pilot = Tate Keck Copilot = Blake Krueger
-
-        # triangle pilot = Blake krueger - Copilot = Tate Keck
-
-        # Circle Pilot = Tate Keck - Copilot = Blake Krueger
+        # Square - Pilot = Tate keck - co pilot Blake Krugger
+        for i in range(4):
+            sendmsg('forward 80', 6)
+            sendmsg('ccw 90', 6)
 
 
         sendmsg('land')
