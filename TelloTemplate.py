@@ -53,6 +53,7 @@ print("\n****CHECK SURROUNDING AREA BEFORE FLIGHT****")
 ready = input('\nAre you ready to take flight: ')
 
 
+
 try:
     if ready.lower() == 'yes':
         print("\nStarting Drone!\n")
@@ -60,10 +61,11 @@ try:
         sendmsg('command', 0)
         sendmsg('takeoff')
 
-        # Square - Pilot = Tate keck - co pilot Blake Krugger
-        for i in range(4):
-            sendmsg('forward 80', 6)
-            sendmsg('ccw 90', 6)
+        # Square - Pilot = Tate keck - co pilot Blake Krueger
+        sendmsg('up 40',7)
+        for i in range(3):
+            sendmsg('forward 50', 6)
+            sendmsg('cw 90', 6)
 
 
         sendmsg('land')
