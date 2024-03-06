@@ -62,7 +62,7 @@ try:
         sendmsg('up 50', 10)
         sendmsg('forward 200',10)
         sendmsg('stop',1)
-        sendmsg('forward 200')
+        sendmsg('forward 50')
 
         sendmsg('curve 125 125 0 0 250 0 50',10)
         sendmsg('cw 180',10 )
